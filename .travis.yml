@@ -15,4 +15,4 @@ python:
      - platformio update
 
  script:
-     - platformio ci --lib="." --board=esp32dev --board=ID_2 --board=ID_N
+     - platformio ci --lib="." --board=esp32dev
