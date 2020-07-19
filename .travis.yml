@@ -8,7 +8,8 @@ python:
          - "~/.platformio"
 
  env:
-     - PLATFORMIO_CI_SRC=PIO_TEMPLATE/src
+     - PLATFORMIO_CI_SRC=PIO_TEMPLATE/src/
+     - PLATFORMIO_CI_SRC=src/
 
  install:
      - pip install -U platformio
