@@ -2,19 +2,20 @@ language: python
 python:
     - "2.7"
 
- sudo: false
- cache:
-     directories:
-         - "~/.platformio"
+# Cache PlatformIO packages using Travis CI container-based infrastructure
+sudo: false
+cache:
+    directories:
+        - "~/.platformio"
 
- env:
+env:
      - PLATFORMIO_CI_SRC=PIO_TEMPLATE/src/
      - PLATFORMIO_CI_SRC=src/
 
- install:
-     - pip install -U platformio
-     - platformio update
+install:
+    - pip install -U platformio
+    - platformio update
 
- script:
-     - platformio ci --lib="." --board=esp32dev
-     
+script:
+    - platformio ci --lib="." --board=esp32dev
+
