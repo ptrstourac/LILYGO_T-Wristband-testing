@@ -10,12 +10,12 @@ cache:
 
 env:
      - PLATFORMIO_CI_SRC=PIO_TEMPLATE/src/
-     - PLATFORMIO_CI_SRC=src/
+#     - PLATFORMIO_CI_SRC=src/
 
 install:
     - pip install -U platformio
     - platformio update
 
 script:
-    - platformio ci --lib="include/" --board=esp32dev
+    - platformio ci --lib="include/" --lib="PIO_TEMPLATE/.pio/libdeps/esp32dev/**" --board=esp32dev
 
