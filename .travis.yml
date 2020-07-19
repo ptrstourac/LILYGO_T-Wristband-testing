@@ -17,5 +17,5 @@ install:
     - platformio update
 
 script:
-    - platformio ci --lib="include/" --lib="PIO_TEMPLATE/.pio/libdeps/esp32dev/**" --board=esp32dev
+    - platformio ci --lib="include/" --lib="PIO_TEMPLATE/.pio/libdeps/esp32dev/PCF8563_Library/" --lib="PIO_TEMPLATE/.pio/libdeps/esp32dev/NTP/" --lib="PIO_TEMPLATE/.pio/libdeps/esp32dev/EasyButton/" --lib="PIO_TEMPLATE/.pio/libdeps/esp32dev/TFT_eSPI/" --lib="PIO_TEMPLATE/.pio/libdeps/esp32dev/WifiManager/" --board=esp32dev
 
