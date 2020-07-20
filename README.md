@@ -38,6 +38,6 @@ Your computer should immediately recognize your device and install drivers.
 To flash you software via USB, open the `platfomio.ini` file and find
 ```
 [platformio]
-default_envs = esp32dev
+default_envs = esp32dev_(wired/OTA)
 ```
-Make sure, that default enviroment is set to `esp32dev`, not to `esp32devOTA`.
+Make sure, that default enviroment is set to `esp32dev_wired`, not to `esp32dev_OTA`.
