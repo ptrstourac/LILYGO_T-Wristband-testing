@@ -34,4 +34,10 @@ Now connect daughter board to the computer with USB-C, or micro USB cable.
 <img src="_guide/img/wired_upload-10.jpg" alt="USB" width="250"/> 
 
 Your computer should immediately recognize your device and install drivers.
-After successful driver installation you can start uploading your software.
+
+To flash you software via USB, open the `platfomio.ini` file and find
+```
+[platformio]
+default_envs = esp32dev
+```
+Make sure, that default enviroment is set to `esp32dev`, not to `esp32devOTA`.
